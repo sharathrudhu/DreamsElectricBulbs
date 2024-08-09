@@ -39,12 +39,12 @@ header {
     align-items: center;
 }
 
-#Navbar {
+nav {
     display: flex;
     align-items: center;
 }
 
-#Navbar ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -52,11 +52,11 @@ header {
     gap: 30px; /* 22px space between navigation links */
 }
 
-#Navbar ul li {
+nav ul li {
     display: inline;
 }
 
-#Navbar ul li a {
+nav ul li a {
     text-decoration: none;
     color: #FFF;
     font-family: "Poppins", sans-serif;
@@ -65,7 +65,7 @@ header {
     font-size: 16px;
 }
 
-#Navbar ul li:first-child a {
+nav ul li:first-child a {
     color: #FFD600;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -74,7 +74,7 @@ header {
     position: relative; /* Create a positioning context */
 }
 
-#Navbar ul li:first-child a::after {
+nav ul li:first-child a::after {
     content: ''; /* Empty content */
     display: block;
     position: absolute;
