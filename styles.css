@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #f8f8f8;
 }
 
 header {
     width: 1366px;
     margin: 0 auto;
-    height: 590px;
+    height: 589px;
     background: url(./images/BG1.jpg);
     background-repeat: no-repeat;
 }
@@ -49,7 +50,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px; /* 22px space between navigation links */
+    gap: 30px;
+    /* 22px space between navigation links */
 }
 
 nav ul li {
@@ -70,25 +72,32 @@ nav ul li:first-child a {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    text-decoration: none; /* Remove default underline */
-    position: relative; /* Create a positioning context */
+    text-decoration: none;
+    /* Remove default underline */
+    position: relative;
+    /* Create a positioning context */
 }
 
 nav ul li:first-child a::after {
-    content: ''; /* Empty content */
+    content: '';
+    /* Empty content */
     display: block;
     position: absolute;
     left: -10px;
-    bottom: -5px; /* Position 5px below the text */
+    bottom: -5px;
+    /* Position 5px below the text */
     width: 140%;
-    height: 2px; /* Adjust thickness */
-    background-color: #FFD600; /* Match the text color */
+    height: 2px;
+    /* Adjust thickness */
+    background-color: #FFD600;
+    /* Match the text color */
 }
 
 /* Dropdown Menu Styles */
 .dropdown {
     position: relative;
-    margin-left: 22px; /* Space between navigation and dropdown */
+    margin-left: 22px;
+    /* Space between navigation and dropdown */
 }
 
 .dropdown-icon {
@@ -111,7 +120,8 @@ nav ul li:first-child a::after {
 
 .dropdown-menu input[type="text"] {
     display: block;
-    width: 100%; /* Adjust to fit within padding */
+    width: 100%;
+    /* Adjust to fit within padding */
     margin-bottom: 10px;
     padding: 8px;
     box-sizing: border-box;
@@ -125,19 +135,22 @@ nav ul li:first-child a::after {
     color: white;
     border: none;
     cursor: pointer;
-    margin-right: 5px; /* Space between buttons */
-    display: inline-block; /* Ensure buttons are inline */
+    margin-right: 5px;
+    /* Space between buttons */
+    display: inline-block;
+    /* Ensure buttons are inline */
 }
 
 .dropdown-menu button:last-child {
-    margin-right: 0; /* Remove margin from the last button */
+    margin-right: 0;
+    /* Remove margin from the last button */
 }
 
 #dropdown-toggle {
     display: none;
 }
 
-#dropdown-toggle:checked + label + .dropdown-menu {
+#dropdown-toggle:checked+label+.dropdown-menu {
     display: block;
 }
 
@@ -165,26 +178,26 @@ nav ul li:first-child a::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     color: #FFF;
     font-size: 2em;
 }
 
-.bannertextcontent h1{
+.bannertextcontent h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 32px;
 }
 
-.bannertextcontent p{
+.bannertextcontent p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
 }
 
-.bannerbuttongroup{
+.bannerbuttongroup {
     width: 330px;
 
     height: 30px;
@@ -192,7 +205,7 @@ nav ul li:first-child a::after {
     justify-content: space-between;
 }
 
-.bannertextcontent button{
+.bannertextcontent button {
     width: 150px;
     height: 30px;
     font-family: "Poppins", sans-serif;
@@ -211,10 +224,156 @@ nav ul li:first-child a::after {
     justify-content: center;
     align-items: center;
 }
+
 .greenbulb {
     margin-top: 20px;
 }
 
-.orangebulb{
+.orangebulb {
     margin-bottom: 60px;
+}
+
+/* product section */
+
+#product {
+    width: 1366px;
+    margin: 0 auto;
+    height: 606px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#product::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00173D;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 70%);
+}
+
+#product h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    margin: 50px 0 35px;
+    color: #FFF;
+    z-index: 2;
+}
+
+#product p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFF;
+    z-index: 2;
+}
+
+#productContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 50px;
+    z-index: 2;
+}
+
+.productFrame {
+    width: 300px;
+    height: 260px;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.productFrame figure {
+    width: 100%;
+    height: 27px;
+    display: flex;
+    gap: 15px;
+}
+
+.productFrame figcaption {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: #003B73;
+}
+
+#product .productFrame p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #434343;
+}
+
+.productFrame button {
+    width: 132px;
+    height: 40px;
+    background: linear-gradient(to right, #0C2144, #1C468B);
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Offer */
+
+#offer {
+    background-color: #00173D;
+    height: 150px;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+#offer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+#offer .container button {
+    width: 274px;
+    height: 64px;
+    border-radius: 36px;
+    background: none;
+    border: 1px solid #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+#offer .container button .arrow {
+    font-size: 27px;
 }
