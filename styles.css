@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 1366px;
+    margin: 0 auto;
+    height: 590px;
+    background: url(./images/BG1.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navigation code */
+
+.topNavigation {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#Navbar {
+    display: flex;
+    align-items: center;
+}
+
+#Navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* 22px space between navigation links */
+}
+
+#Navbar ul li {
+    display: inline;
+}
+
+#Navbar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#Navbar ul li:first-child a {
+    color: #FFD600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Create a positioning context */
+}
+
+#Navbar ul li:first-child a::after {
+    content: ''; /* Empty content */
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -5px; /* Position 5px below the text */
+    width: 140%;
+    height: 2px; /* Adjust thickness */
+    background-color: #FFD600; /* Match the text color */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    margin-left: 22px; /* Space between navigation and dropdown */
+}
+
+.dropdown-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    width: 250px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -125px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 100;
+}
+
+.dropdown-menu input[type="text"] {
+    display: block;
+    width: 100%; /* Adjust to fit within padding */
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu button {
+    width: 48%;
+    flex: 1;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px; /* Space between buttons */
+    display: inline-block; /* Ensure buttons are inline */
+}
+
+.dropdown-menu button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+#dropdown-toggle {
+    display: none;
+}
+
+#dropdown-toggle:checked + label + .dropdown-menu {
+    display: block;
+}
+
+/* banner content code */
+
+#bannercontent {
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+.bannertextcontent {
+    width: 550px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    color: #FFF;
+    font-size: 2em;
+}
+
+.bannertextcontent h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.bannertextcontent p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.bannerbuttongroup{
+    width: 330px;
+
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannertextcontent button{
+    width: 150px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.bannerimage {
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greenbulb {
+    margin-top: 20px;
+}
+
+.orangebulb{
+    margin-bottom: 60px;
+}
